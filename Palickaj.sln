@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palickaj", "Palickaj.csproj", "{A14A7DEA-F0D6-4082-B391-5C068AE3F0BC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{37C69A31-AC84-4EA1-8369-6FC0A3657AC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palickaj.Tests", "tests\Palickaj.Tests\Palickaj.Tests.csproj", "{8556F539-BEDB-4113-8E0A-D4E89D5C7784}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,12 @@ Global
 		{A14A7DEA-F0D6-4082-B391-5C068AE3F0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A14A7DEA-F0D6-4082-B391-5C068AE3F0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A14A7DEA-F0D6-4082-B391-5C068AE3F0BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8556F539-BEDB-4113-8E0A-D4E89D5C7784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8556F539-BEDB-4113-8E0A-D4E89D5C7784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8556F539-BEDB-4113-8E0A-D4E89D5C7784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8556F539-BEDB-4113-8E0A-D4E89D5C7784}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8556F539-BEDB-4113-8E0A-D4E89D5C7784} = {37C69A31-AC84-4EA1-8369-6FC0A3657AC8}
 	EndGlobalSection
 EndGlobal

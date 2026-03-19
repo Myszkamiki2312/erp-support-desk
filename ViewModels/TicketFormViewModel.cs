@@ -35,7 +35,7 @@ public sealed class TicketFormViewModel
     public string Priority { get; set; } = "Sredni";
 
     [Required]
-    [Display(Name = "Osoba prowadzaca")]
+    [Display(Name = "Osoba odpowiedzialna")]
     public string AssignedEngineer { get; set; } = string.Empty;
 
     [Range(0, 500)]
@@ -43,11 +43,11 @@ public sealed class TicketFormViewModel
     public decimal PlannedHours { get; set; }
 
     [Range(0, 500)]
-    [Display(Name = "Wykorzystane godziny")]
+    [Display(Name = "Przepracowane godziny")]
     public decimal SpentHours { get; set; }
 
     [Required]
-    [Display(Name = "Kanal zgloszenia")]
+    [Display(Name = "Zrodlo zgloszenia")]
     public string SourceChannel { get; set; } = string.Empty;
 
     [Required]
@@ -58,10 +58,10 @@ public sealed class TicketFormViewModel
     [DataType(DataType.DateTime)]
     public DateTime DueAt { get; set; } = DateTime.Today.AddDays(1).AddHours(12);
 
-    [Display(Name = "Wymaga deploymentu")]
+    [Display(Name = "Wymaga wdrozenia")]
     public bool RequiresDeployment { get; set; }
 
-    [Display(Name = "Task billable")]
+    [Display(Name = "Praca platna")]
     public bool IsBillable { get; set; }
 
     public IEnumerable<SelectListItem> ClientOptions { get; set; } = [];

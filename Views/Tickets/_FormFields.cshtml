@@ -5,7 +5,7 @@
 <div class="form-grid">
     <div class="form-field-wide">
         <label asp-for="Title" class="form-label"></label>
-        <input asp-for="Title" class="form-control form-control-lg" />
+        <input asp-for="Title" class="form-control form-control-lg" placeholder="Np. Blad walidacji dokumentu lub rozbudowa integracji" />
         <span asp-validation-for="Title" class="text-danger small"></span>
     </div>
 
@@ -47,7 +47,7 @@
 
     <div>
         <label asp-for="AffectedVersion" class="form-label"></label>
-        <input asp-for="AffectedVersion" class="form-control" />
+        <input asp-for="AffectedVersion" class="form-control" placeholder="Np. Comarch ERP XL 2024.1" />
         <span asp-validation-for="AffectedVersion" class="text-danger small"></span>
     </div>
 
@@ -71,7 +71,7 @@
 
     <div class="form-field-wide">
         <label asp-for="Description" class="form-label"></label>
-        <textarea asp-for="Description" rows="6" class="form-control"></textarea>
+        <textarea asp-for="Description" rows="6" class="form-control" placeholder="Opisz problem, kroki do odtworzenia, oczekiwany efekt i ewentualne ryzyko biznesowe."></textarea>
         <span asp-validation-for="Description" class="text-danger small"></span>
     </div>
 </div>
@@ -79,10 +79,10 @@
 <div class="switch-grid mt-4">
     <label class="toggle-card">
         <input asp-for="RequiresDeployment" class="form-check-input" />
-        <span>Wymaga deploymentu produkcyjnego</span>
+        <span>Wymaga wdrozenia na produkcje</span>
     </label>
     <label class="toggle-card">
         <input asp-for="IsBillable" class="form-check-input" />
-        <span>Rozliczaj jako prace billable</span>
+        <span>Rozlicz jako prace platna</span>
     </label>
 </div>
