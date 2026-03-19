@@ -40,7 +40,7 @@ public static class SupportCatalog
 
     public static readonly string[] Engineers =
     [
-        "Bartlomiej Przybycien",
+        "Bartłomiej Przybycień",
         "Katarzyna Wrobel",
         "Marta Kozak",
         "Kamil Pluta"

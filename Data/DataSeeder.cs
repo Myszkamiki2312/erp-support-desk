@@ -110,7 +110,7 @@ public static class DataSeeder
                 Module = "Logistyka",
                 Status = "W realizacji",
                 Priority = "Krytyczny",
-                AssignedEngineer = "Bartlomiej Przybycien",
+                AssignedEngineer = "Bartłomiej Przybycień",
                 PlannedHours = 8,
                 SpentHours = 5.5m,
                 SourceChannel = "Telefon",
@@ -130,7 +130,7 @@ public static class DataSeeder
                 Module = "Integracje",
                 Status = "Zaplanowane",
                 Priority = "Wysoki",
-                AssignedEngineer = "Bartlomiej Przybycien",
+                AssignedEngineer = "Bartłomiej Przybycień",
                 PlannedHours = 12,
                 SpentHours = 2,
                 SourceChannel = "Email",
@@ -250,7 +250,7 @@ public static class DataSeeder
                 Module = "Handel",
                 Status = "Nowe",
                 Priority = "Sredni",
-                AssignedEngineer = "Bartlomiej Przybycien",
+                AssignedEngineer = "Bartłomiej Przybycień",
                 PlannedHours = 5,
                 SpentHours = 0,
                 SourceChannel = "Portal",
@@ -312,7 +312,7 @@ public static class DataSeeder
                 SourceSystem = "Comarch ERP XL",
                 TargetSystem = "VSoft DMS",
                 Status = "Monitorowana",
-                Owner = "Bartlomiej Przybycien",
+                Owner = "Bartłomiej Przybycień",
                 Criticality = "Wysoka",
                 SuccessRate = 97.8m,
                 ErrorCount = 2,
@@ -368,7 +368,7 @@ public static class DataSeeder
                 SourceSystem = "MES",
                 TargetSystem = "Comarch ERP XL",
                 Status = "Wymaga reakcji",
-                Owner = "Bartlomiej Przybycien",
+                Owner = "Bartłomiej Przybycień",
                 Criticality = "Wysoka",
                 SuccessRate = 88.7m,
                 ErrorCount = 8,
@@ -401,22 +401,22 @@ public static class DataSeeder
         var hasChanges = false;
 
         var tickets = await db.ServiceTickets
-            .Where(ticket => ticket.AssignedEngineer == "Bartosz Przybycien")
+            .Where(ticket => ticket.AssignedEngineer == "Bartosz Przybycien" || ticket.AssignedEngineer == "Bartlomiej Przybycien")
             .ToListAsync();
 
         foreach (var ticket in tickets)
         {
-            ticket.AssignedEngineer = "Bartlomiej Przybycien";
+            ticket.AssignedEngineer = "Bartłomiej Przybycień";
             hasChanges = true;
         }
 
         var integrations = await db.IntegrationFlows
-            .Where(integration => integration.Owner == "Bartosz Przybycien")
+            .Where(integration => integration.Owner == "Bartosz Przybycien" || integration.Owner == "Bartlomiej Przybycien")
             .ToListAsync();
 
         foreach (var integration in integrations)
         {
-            integration.Owner = "Bartlomiej Przybycien";
+            integration.Owner = "Bartłomiej Przybycień";
             hasChanges = true;
         }
 
