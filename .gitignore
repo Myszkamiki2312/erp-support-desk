@@ -4,3 +4,9 @@ App_Data/*.db
 App_Data/*.db-shm
 App_Data/*.db-wal
 .DS_Store
+SCIAGA_LOCAL.txt
+angular-client/node_modules/
+angular-client/dist/
+angular-client/.angular/
+angular-client/.vscode/
+npm-debug.log*

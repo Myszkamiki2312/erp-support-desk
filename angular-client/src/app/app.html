@@ -1,0 +1,30 @@
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">ERP</span>
+      <div>
+        <p class="eyebrow">Angular + API</p>
+        <h1>{{ title }}</h1>
+      </div>
+    </div>
+
+    <p class="sidebar-copy">
+      Panel demonstracyjny dla zespolu utrzymania i wdrozen systemow ERP z widokiem operacyjnym i lista zgloszen.
+    </p>
+
+    <nav class="nav">
+      <a routerLink="/dashboard" routerLinkActive="active" class="nav-link">Dashboard</a>
+      <a routerLink="/tickets" routerLinkActive="active" class="nav-link">Zgloszenia</a>
+      <a href="http://localhost:5080" target="_blank" rel="noreferrer" class="nav-link nav-link-external">MVC demo</a>
+    </nav>
+
+    <div class="sidebar-note">
+      <span>Stack</span>
+      <strong>.NET 8, Angular, EF Core, SQL Server/SQLite</strong>
+    </div>
+  </aside>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
